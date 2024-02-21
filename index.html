@@ -6,21 +6,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
-        body: {
-            color: #000307;
+        body {
+            color: #000000;
+            background-color: darkslategrey;
         }
         main {
-            border: 1px solid #eaeaea;
-            margin: 49px auto;
-            display: flex;
-            font-size: 14px;
+            margin: 30px auto;
+            font-size: 15px;
             padding: 0 !important;
             border-radius: 4px;
+            background: white;
+        }
+        .content {
+            display: flex;
+        }
+
+        h3 {
+            font-size: x-large;
+            border-bottom: 3px solid;
+            text-transform: uppercase;
         }
 
         aside {
-            border-right: 1px solid #eaeaea;
-            padding: 30px;
+            padding: 20px 30px;
             max-width: 33%;
         }
 
@@ -32,9 +40,9 @@
             flex: 1;
         }
 
-        section>div {
-            padding: 30px;
-            border-bottom: 1px solid #eaeaea;
+        section>div, .header {
+            padding: 20px 30px;
+            /* border-bottom: 1px solid #eaeaea; */
         }
 
         div.no-border {
@@ -57,6 +65,7 @@
 
         ul {
             margin-bottom: 0;
+            padding-left: 30px;
         }
 
         .badge-list h6 {
@@ -76,6 +85,11 @@
             box-shadow: none;
         }
 
+        .flex-box {
+            display: flex;
+            justify-content: space-between;
+        }
+
         .badges {
             color: #121212;
             border-radius: 4px;
@@ -89,11 +103,11 @@
             vertical-align: baseline;
         }
         .card-body {
-            padding: 1.25rem 0px;
+            padding: 1rem 0px;
         }
-        
+
         .card-header {
-            text-transform: uppercase;
+            /* text-transform: uppercase; */
             border: 0;
             background: white;
             padding: 0;
@@ -101,175 +115,169 @@
         .card {
             border: 0;
         }
+
+        .li-content{
+            margin-left: 20px;
+        }
     </style>
 </head>
 
 <body>
     <main class="container">
-        <aside>
-            <div class="mb-4">
+        <div class="header">
+            <h1>Prabhat Ojha</h1>
+            <h5 style="font-size: .8rem;">Frontend/fullstack developer @ Uber</h5>
+            <p style="font-size: 13px;"> With more than nine years of experience as a Front-end and Full-stack developer, I am a highly motivated and efficient problem solver skilled in coding, collaboration, system design, and architecture.
+            </p>
+        </div>
+        <div class="content">
+            <section>
                 <div>
-                    <h2 class="primary">Prabhat Ojha</h2>
-                    <h5 style="font-size: 1.2rem;">Frontend/Fullstack Developer</h5>
-                    <p style="font-size: 13px;"> 9+ Years of experience as a Front-end / Full-stack development.
-                        Highly motivated.
-                        Efficient problem solver with skills in coding, collaboration
-                        and system design and architecture
-                    </p>
+                    <h3>Summary</h3>
+                    <div class="mt-4">
+                        <ul>
+                            <li>Led and successfully executed numerous product and engineering initiatives at Uber.</li>
+                            <li>Led a six-member team, fostering effective collaboration and consistently achieving successful outcomes at Paysafe</li>
+                            <li>Led and implemented various processes for enhancement and optimization.</li>
+                            <li>Accumulated a reputation exceeding 1900 on StackOverflow through active participation and contributions.</li>
+                            <li>Mentored three individuals and conducted over 70 interviews during my tenure at Uber.</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h6 class="mt-4">Skills</h6>
+                <div>
+                    <h3>Experience</h3>
+                    <div class="mt-3">
+                        <span class="text-muted">Jun 2021 - Present</span>
+                        <h6>Software Engineer II at Uber</h6>
+                        <ul>
+                            <li>As a member of the Risk team at Uber, I am involved in developing tools aimed at mitigating risk by implementing measures such as banning or
+                                taking action against potential fraudsters, adjusting fares, etc. These tools are capable of processing 150,000 actions per day.</li>
+                            <li>Engage actively in architecture and design discussions and presentations, offering feedback and incorporating input from others on my designs.</li>
+                            <li>Provide mentorship, conduct interviews, and facilitate the onboarding process for new engineers.</li>
+                            <li>Enhanced the team's development productivity by implementing best practices in coding standards,
+                                unit testing, strong type checking, and code reviews.
+                            </li>
+                            <li>Actively engaged in enhancing the system's availability and reliability by implementing new alert mechanisms,
+                                introducing gradual rollout features, and improving debuggability.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-muted">Jun 2019 - Jun 2021</span>
+                        <h6>Senior Frontend Engineer at Paysafe Group</h6>
+                        <ul>
+                            <li>As a technical lead, I've overseen all technical aspects of the entire product.</li>
+                            <li>Developed a resilient web application for merchants, enabling them to regulate and configure
+                                transaction and checkout page flows. Scaled to accommodate approximately 10,000 users.
+                            </li>
+                            <li>Enhanced the team's development productivity by implementing best practices in Coding Standards,
+                                Unit Testing, Linting, Code Review, and State Management.
+                            </li>
+                            <li>Ensure software operates ideally across platforms, without performance intact.</li>
+                            <li>Created and exposed generic components such as tables and dropdowns for reuse by other applications.</li>
+                            <li>Participated in sprint grooming and planning sessions, conducting technical analysis of new requirements.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-muted">Jan 2016 - Jun 2019</span>
+                        <h6>Senior Development Engineer at Pramati Technology</h6>
+                        <ul>
+                            <li>Developed an analytics application from inception to production, enabling users to visualize insights on current market trends of products.
+                                This application assists end-users in aggregating, interpreting, and predicting market demand for products.
+                            </li>
+                            <li>I led the development of an e-commerce application from inception, enabling users to purchase analytics reports. My primary contributions
+                                encompassed user management, designing the checkout page, and integrating payment gateways.</li>
+                            <li>Participated in sprint grooming and planning sessions, conducting technical analysis of new requirements.</li>
+                        </ul>
+                    </div>
+                    <div class="mt-4">
+                        <span class="text-muted">Jul 2013 - Dec 2015</span>
+                        <h6>Software Engineer at S & P Global</h6>
+                        <ul>
+                            <li>In my role as a full-stack developer, I constructed a Messaging Platform Wrapper.
+                                This wrapper facilitates Pub/Sub communication between applications.
+                            </li>
+                            <li>
+                                Implemented and exposed new REST APIs for security token generation and validation.
+                            </li>
+                            <li>
+                                Developed a web application to visualize token and messaging analytics.
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="card-body badge-list">
-                    <h6><span class="badges">React JS</span></h6>
-                    <h6><span class="badges">Angular 2-9</span></h6>
-                    <h6><span class="badges">Javascript</span></h6>
-                    <h6><span class="badges">Typescript</span></h6>
-                    <h6><span class="badges">GraphQL</span></h6>
-                    <h6><span class="badges">HTML 5</span></h6>
-                    <h6><span class="badges">CSS 3</span></h6>
-                    <h6><span class="badges">Bootstrap</span></h6>
-                    <h6><span class="badges">SASS</span></h6>
-                    <h6><span class="badges">Java</span></h6>
-                    <h6><span class="badges">Node.js</span></h6>
-                    <h6><span class="badges">MySQL</span></h6>
-                    <h6><span class="badges">MongoDB</span></h6>
-                    <h6><span class="badges">Go</span></h6>
+                <div>
+                    <h3>Education</h3>
+                    <div class="mt-3">
+                        <div class="flex-box"><h6>Master of Computer Application (MCA)</h6> <label>2010 - 2013</label></div>
+                        <span class="text-muted">National Institute of Technology, Tiruchirappalli</span>
+                    </div>
+                    <div class="mt-3">
+                        <div class="flex-box"><h6>Bachelor of Computer Application (BCA)</h6><label>2007 - 2010</label></div>
+                        <span class="text-muted">Shri Cloth Market Institute of Professional Studies,
+                            Indore</span>
+                    </div>
                 </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h6 class="mb-0">Contact Info</h6>
+            </section>
+            <aside>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="mb-0">Contact</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Bangalore, India</p>
+                        <p>+91 - 9030276850</p>
+                        <p>prabhatojha90@gmail.com</p>
+                    </div>
                 </div>
-                <div class="card-body">
-                    <p>Address</p>
-                    <label class="primary"><strong>Bangalore, India</strong></label>
-                    <p>Mobile</p>
-                    <label class="primary"><strong>+91 - 9030276850</strong></label>
-                    <p>Email</p>
-                    <label class="primary"><strong>prabhatojha90@gmail.com</strong></label>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="mb-0">Skills</h3>
+                    </div>
+                    <div class="card-body">
+                        <div>React</div>
+                        <div>Javascript</div>
+                        <div>Typescript</div>
+                        <div>GraphQL</div>
+                        <div>Node.js</div>
+                        <div>Angular</div>
+                        <div>HTML 5</div>
+                        <div>CSS 3</div>
+                        <div>Bootstrap</div>
+                        <div>SASS</div>
+                        <div>Java</div>
+                        <div>MySQL</div>
+                        <div>MongoDB</div>
+                        <div>Go</div>
+                        <div>Pub/sub - RabbitMQ </div>
+                        <div>Service oriented architecture</div>
+                    </div>
                 </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-header">
-                    <h6 class="mb-0">Public presence
-                    </h6>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3 class="mb-0">Public presence</h3>
+                    </div>
+                    <div class="card-body badge-list">
+                        <!-- <p>Website</p>
+                        <a href="https://drawposter.com/">
+                            <strong>Draw Poster</strong>
+                        </a> -->
+                        <p class="mt-2">LinkedIn</p>
+                        <a href="https://www.linkedin.com/in/prabhat-ojha-90/">
+                            <strong>prabhat-ojha-90</strong>
+                        </a>
+                        <p class="mt-2">Stackoverflow</p>
+                        <a href="https://stackoverflow.com/users/2978923/prabhatojha">
+                            <strong>prabhatojha (1900+ Reputation)</strong>
+                        </a>
+                        <p class="mt-2">Github</p>
+                        <a href="https://github.com/prabhatojha">
+                            <strong>prabhatojha</strong>
+                        </a>
+                    </div>
                 </div>
-                <div class="card-body badge-list">
-                    <p>Website</p>
-                    <a href="https://drawposter.com/">
-                        <strong>Draw Poster</strong>
-                    </a>
-                    <p class="mt-2">LinkedIn</p>
-                    <a href="https://www.linkedin.com/in/prabhat-ojha-90/">
-                        <strong>prabhat-ojha-90</strong>
-                    </a>
-                    <p class="mt-2">Stackoverflow</p>
-                    <a href="https://stackoverflow.com/users/2978923/prabhatojha">
-                        <strong>prabhatojha (1900+ Reputation)</strong>
-                    </a>
-                    <p class="mt-2">Github</p>
-                    <a href="https://github.com/prabhatojha">
-                        <strong>prabhatojha</strong>
-                    </a>
-                </div>
-            </div>
-        </aside>
-        <section>
-            <div>
-                <h5>Work Experience</h5>
-                <div class="mt-3">
-                    <span class="text-muted">Jun 2021 - Present</span>
-                    <h6>Uber, Software Engineer II</h6>
-                    <ul>
-                        <li>As part of Risk team, building tools to mitigate risk by banning/acting upon the potential fraudster, fare adjustment etc. Processing 150k actions per day.</li>
-                        <li>Actively participate in architecture and design disucssions and collaboration across teams.</li>
-                        <li>Mentoring, interviewing and onboarding new engineers.</li>
-                    </ul>
-                </div>
-                <div class="mt-4">
-                    <span class="text-muted">Jun 2019 - Jun 2021</span>
-                    <h6>Paysafe Group, Senior Frontend Engineer</h6>
-                    <ul>
-                        <li>As a technical lead, driven the whole product’s in and out technically.</li>
-                        <li>Built a robust web application for the merchants to let regulate,
-                            configure the transaction and checkout pages flow. Scaled to around 10k users.
-                        </li>
-                        <li>Evolved the team's development productivity with the best practices of Coding Standards,
-                            Unit Testing, Linting, Code Review, State Management.
-                        </li>
-                        <li>Ensure software operates ideally across platforms, without performance intact.</li>
-                        <li>Lead a team of 6 members, handled cross team requirements and analysis.</li>
-                        <li>Built and exposed generic components like table, dropdown etc. to be reused by other
-                            applications.</li>
-                        <li>Involved in sprint grooming/planning, doing technical analysis of the new requirements.</li>
-                    </ul>
-                </div>
-                <div class="mt-4">
-                    <span class="text-muted">Jan 2016 - Jun 2019</span>
-                    <h6>Pramati Technology, Senior Development Engineer</h6>
-                    <ul>
-                        <li>Built an analytics application from scratch to production, visualise insights of
-                            current market trend of products and help end users to collate, perceive, predict the market
-                            demand of the products.
-                        </li>
-                        <li>Developed an e-commerce application from scratch for users to buy analytics reports.
-                            User management, checkout page, payment gateway integration were the major contribution.</li>
-                        <li>Involved in sprint grooming/planning, doing technical analysis of the new requirements.</li>
-                    </ul>
-                </div>
-                <div class="mt-4">
-                    <span class="text-muted">Jul 2013 - Dec 2015</span>
-                    <h6>S & P Global, Software Engineer</h6>
-                    <ul>
-                        <li>As a full stack developer, built a Messaging Platform Wrapper, used for Pub/Sub
-                            communication between applications.
-                        </li>
-                        <li>
-                            Exposed new REST APIs for Security Token generation and validation.
-                        </li>
-                        <li>
-                            Built a web application to visualise the Token and Messaging analytics.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <h5>Education</h5>
-                <div class="mt-3">
-                    <h6>Master of Computer Application (MCA)</h6>
-                    <span class="text-muted">2010 - 2013 -- National Institute of Technology, Tiruchirappalli</span>
-                </div>
-                <div class="mt-3">
-                    <h6>Bachelor of Computer Application (BCA)</h6>
-                    <span class="text-muted">2007 - 2010 Shri Cloth Market Institute of Professional Studies,
-                        Indore</span>
-                </div>
-            </div>
-            <div class="no-border">
-                <h5>Personal Interest</h5>
-                <div class="mt-3">
-                    <h6>Draw Poster <span class="text-muted">(2020)</span></h6>
-                    <p>A web application tool to design free infographic poster.</p>
-                </div>
-                <div class="mt-3">
-                    <h6>Gadgetclues <span class="text-muted">(2015)</span></h6>
-                    <p>A website to muster recent innovative gadgets information, affiliated with various e-commerce
-                        websites.</p>
-                </div>
-                <div class="mt-3">
-                    <h6>Chess Application <span class="text-muted">(2016)</span></h6>
-                    <p>An online multiplayer chess application which connects two random players to play.</p>
-                </div>
-                <div class="mt-3">
-                    <h6>Refillwallet <span class="text-muted">(2013)</span></h6>
-                    <p>A website to get Cashback offers for various e-commerce website.</p>
-                </div>
-
-            </div>
-        </section>
+            </aside>
+        </div>
     </main>
 </body>
 
